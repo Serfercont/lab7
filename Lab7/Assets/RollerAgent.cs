@@ -8,6 +8,7 @@ public class RollerAgent : Agent
 {
     Rigidbody rBody;
     public Transform Target;
+    public float ForceMultiplier = 10;
 
     void Start()
     {
@@ -39,7 +40,7 @@ public class RollerAgent : Agent
         Vector3 controlSignal = Vector3.zero;
         controlSignal.x = actionBuffers.ContinuousActions[0];
         controlSignal.z = actionBuffers.ContinuousActions[1];
-        rBody.AddForce(controlSignal * 10);
+        rBody.AddForce(controlSignal * ForceMultiplier);
 
         float distanceToTarget = Vector3.Distance(this.transform.localPosition, Target.localPosition);
 

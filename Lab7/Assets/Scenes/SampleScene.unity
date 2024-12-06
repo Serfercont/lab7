@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 1725292468}
   - component: {fileID: 1725292474}
   - component: {fileID: 1725292473}
+  - component: {fileID: 1725292475}
   m_Layer: 0
   m_Name: RollerAgent
   m_TagString: Untagged
@@ -630,6 +631,21 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
   Target: {fileID: 2118737711}
+  ForceMultiplier: 10
+--- !u!114 &1725292475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725292467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DecisionPeriod: 10
+  TakeActionsBetweenDecisions: 1
 --- !u!1 &2118737707
 GameObject:
   m_ObjectHideFlags: 0
