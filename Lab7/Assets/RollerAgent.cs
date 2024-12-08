@@ -19,8 +19,8 @@ public class RollerAgent : Agent
     {
         if (this.transform.localPosition.y < 0)
         {
-            rBody.velocity = Vector3.zero;
-            rBody.angularVelocity = Vector3.zero;
+            this.rBody.velocity = Vector3.zero;
+            this.rBody.angularVelocity = Vector3.zero;
             this.transform.localPosition = new Vector3(0, 0.5f, 0);
         }
 
@@ -55,4 +55,10 @@ public class RollerAgent : Agent
             EndEpisode();
         }
     }
+    public override void Heuristic(in ActionBuffers actionsOut)
+{
+    var continuousActionsOut = actionsOut.ContinuousActions;
+    continuousActionsOut[0] = Input.GetAxis("Horizontal");
+    continuousActionsOut[1] = Input.GetAxis("Vertical");
+}
 }
