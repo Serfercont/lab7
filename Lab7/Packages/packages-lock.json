@@ -78,18 +78,19 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ml-agents": {
-      "version": "file:C:/Users/sergi/Documents/GitHub/ml-agents/com.unity.ml-agents",
-      "depth": 0,
-      "source": "local",
+      "version": "3.0.0-exp.1",
+      "depth": 1,
+      "source": "registry",
       "dependencies": {
         "com.unity.sentis": "1.2.0-exp.2",
-        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.physics": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.physics": "1.0.0"
-      }
+        "com.unity.modules.imageconversion": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.ml-agents.extensions": {
-      "version": "file:C:/Users/sergi/Documents/GitHub/ml-agents/com.unity.ml-agents.extensions",
+      "version": "file:C:/Users/sergiofc6/Documents/GitHub/ml-agents/com.unity.ml-agents.extensions",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -106,7 +107,7 @@
     },
     "com.unity.sentis": {
       "version": "1.2.0-exp.2",
-      "depth": 1,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.8.4",
