@@ -1,0 +1,59 @@
+[INFO] Listening on port 5004. Start training by pressing the Play button in the Unity Editor.
+[INFO] Connected to Unity environment with package version 2.0.1 and communication version 1.5.0
+[INFO] Connected new brain: RollerBall?team=0
+[INFO] Hyperparameters for behavior name RollerBall:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   64
+          buffer_size:  12000
+          learning_rate:        0.0003
+          beta: 0.001
+          epsilon:      0.2
+          lambd:        0.99
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        network_settings:
+          normalize:    True
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        checkpoint_interval:    500000
+        max_steps:      500000
+        time_horizon:   1000
+        summary_freq:   12000
+        threaded:       False
+        self_play:      None
+        behavioral_cloning:     None
+[INFO] RollerBall. Step: 12000. Time Elapsed: 48.967 s. Mean Reward: 0.228. Std of Reward: 0.420. Training.
+[INFO] RollerBall. Step: 24000. Time Elapsed: 92.049 s. Mean Reward: 0.290. Std of Reward: 0.454. Training.
+[INFO] RollerBall. Step: 36000. Time Elapsed: 138.025 s. Mean Reward: 0.374. Std of Reward: 0.484. Training.
+[INFO] RollerBall. Step: 48000. Time Elapsed: 182.840 s. Mean Reward: 0.415. Std of Reward: 0.493. Training.
+[INFO] RollerBall. Step: 60000. Time Elapsed: 224.591 s. Mean Reward: 0.519. Std of Reward: 0.500. Training.
+[INFO] RollerBall. Step: 72000. Time Elapsed: 268.765 s. Mean Reward: 0.623. Std of Reward: 0.485. Training.
+[INFO] RollerBall. Step: 84000. Time Elapsed: 310.330 s. Mean Reward: 0.766. Std of Reward: 0.424. Training.
+[INFO] RollerBall. Step: 96000. Time Elapsed: 348.119 s. Mean Reward: 0.885. Std of Reward: 0.319. Training.
+[INFO] RollerBall. Step: 108000. Time Elapsed: 387.101 s. Mean Reward: 0.932. Std of Reward: 0.252. Training.
+[INFO] RollerBall. Step: 120000. Time Elapsed: 425.620 s. Mean Reward: 0.966. Std of Reward: 0.180. Training.
+[INFO] RollerBall. Step: 132000. Time Elapsed: 464.697 s. Mean Reward: 0.978. Std of Reward: 0.148. Training.
+[INFO] RollerBall. Step: 156000. Time Elapsed: 16.955 s. Mean Reward: 1.000. Std of Reward: 0.000. Training.
+[INFO] RollerBall. Step: 168000. Time Elapsed: 56.220 s. Mean Reward: 0.999. Std of Reward: 0.035. Training.
